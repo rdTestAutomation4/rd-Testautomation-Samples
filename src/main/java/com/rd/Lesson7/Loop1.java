@@ -4,7 +4,7 @@ package com.rd.Lesson7;
 public class Loop1 {
 
     public static void main(String[] args) {
-        /*
+/*
         System.out.println(" For döngüsü: ");
         for (int i = 1; i <= 10; i +=2) {
 
@@ -13,11 +13,17 @@ public class Loop1 {
 
         System.out.println(" For-each döngüsü: ");
 
-        /*int[] sayilar = {1, 2, 3, 4, 5};
+        int[] sayilar = {1, 2, 3, 4, 5};
+
+        for ( int index=0; index < sayilar.length; index++){
+            int sayi = sayilar[index] - 1;
+            System.out.println("for döngüsü sayı = " + sayi);
+        }
+
 
         for (int sayi : sayilar) {
             sayi = sayi - 1;
-            System.out.println("sayı = " + sayi);
+            System.out.println("for each döngüsü sayı = " + sayi);
         }
 
 
@@ -25,8 +31,6 @@ public class Loop1 {
         for (String meyve : meyveler){
             System.out.println("Meyvemiz = " + meyve);
         }
-
-
 
 
         System.out.println(" While döngüsü: ");
@@ -39,30 +43,28 @@ public class Loop1 {
 
 
 
-
         boolean tekMi=true;
-        int sayi =  5;
+        int sayi =  4;
 
         while(tekMi && sayi>0){
-            System.out.println("Sayi: "+ sayi);
             if (sayi%2==0){
                 tekMi = false;
             }
 
+            System.out.println("Sayi: "+ sayi +" Sayi tek mi? " + tekMi);
             sayi+=1;
-            System.out.println("Sayi tek mi?" + tekMi);
         }
-            */
 
-
+*/
         System.out.println("Do While döngüsü: ");
 
         int sayac1 = 0;
         do {
-            sayac1=6;
+            sayac1=5;
             sayac1++;
             System.out.println("Sonlu yenimeleme: "+ sayac1);
 
         } while (sayac1 <= 5);
+
     }
 }
