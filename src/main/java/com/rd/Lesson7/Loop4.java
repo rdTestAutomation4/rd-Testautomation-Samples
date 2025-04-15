@@ -15,17 +15,17 @@ public class Loop4 {
             dizi.add(i);
         }
 
-        System.out.println(bolme(dizi, sayi));
+        System.out.println(arama(dizi, sayi));
 
     }
 
-    public static String bolme(List<Integer> dizi, int aranan) {
+    public static String arama(List<Integer> dizi, int aranan) {
         for (int eleman : dizi) {
             System.out.println("Eleman= " + eleman);
 
             if (eleman == aranan) {
-                break;
-                // return "Eleman bulundu"+ eleman;
+
+                return "Eleman bulundu"+ eleman;
             }
         }
         return "Eleman bulunamadı!";

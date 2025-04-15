@@ -16,6 +16,7 @@ public class Loop5 {
                 }
             }
         }
+
         for (int sayi : sayiList) {
             System.out.println(sayi);
         }
