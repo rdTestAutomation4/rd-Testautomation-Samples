@@ -1,6 +1,8 @@
 package com.rd.Lesson8;
 
 
+import java.util.Random;
+
 public class MultiDimension {
 
     public static void main(String[] args) {
@@ -12,6 +14,12 @@ public class MultiDimension {
         System.out.println("Satır Sayısı: "+ matris.length);
         System.out.println("1. satırdaki sütun sayısı: "+ matris[0].length);
 
+        Random random = new Random();
+        for (int satir = 0; satir < matris.length; satir++) {
+            for (int sutun = 0; sutun < matris[satir].length; sutun++) {
+            matris[satir][sutun] = random.nextInt(100);
+            }
+        }
 
         for (int satir = 0; satir < matris.length; satir++) {
             System.out.print("|");

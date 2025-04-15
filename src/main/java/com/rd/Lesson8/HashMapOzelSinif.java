@@ -14,6 +14,8 @@ public class HashMapOzelSinif {
 
         Ogrenci ali = ogrenciMap.get(1);
 
+        System.out.println(ogrenciMap.get(1));
+
         System.out.println("1 numralı öğrencimizin adı: "+ ali.ad + " yaşı: "+ ali.yas);
 
         System.out.println("-------");

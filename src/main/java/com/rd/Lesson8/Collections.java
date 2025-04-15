@@ -1,11 +1,14 @@
 package com.rd.Lesson8;
 
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Collections {
     public static void main(String[] args) {
- /*
+/*
         List<String> liste = new ArrayList<>();
         ArrayList<String> arrayList = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
@@ -25,13 +28,14 @@ public class Collections {
         Boolean varMi = liste.contains("Gri");
         System.out.println(liste);
 
+
         System.out.println(varMi);
 
         System.out.println(liste.size());
 
         System.out.println(liste.get(2) +" -  " + liste.get(3));
 
-
+*/
 
         LinkedList<String> linkedList =  new LinkedList<>();
 
@@ -42,7 +46,7 @@ public class Collections {
         System.out.println(linkedList);
 
         System.out.println(linkedList.get(1));
-*/
+
 
         HashSet<String> hashSet = new HashSet<>();
 
@@ -50,5 +54,6 @@ public class Collections {
         hashSet.add("Kırmızı");
 
         System.out.println(hashSet);
+
     }
 }

@@ -20,6 +20,7 @@ public class HashMaps {
         System.out.println(renkler);
 
         System.out.println(renkler.get("R"));
+
     }
 }
 
