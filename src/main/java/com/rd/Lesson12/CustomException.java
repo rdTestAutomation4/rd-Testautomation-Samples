@@ -6,7 +6,7 @@ public class CustomException {
             int bolme = 10 / 0;
 
         } catch (ArithmeticException ex) {
-            throw new ArithmeticException("Bölme");
+            throw new BolmeException("Bölme işleminde 0'a bölünemez", 400);
         }
     }
 }

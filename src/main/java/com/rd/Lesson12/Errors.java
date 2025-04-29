@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Errors {
     public static void main(String[] args) throws IOException {
-        String dosyaYolu = "src/main/java/com/rd/Lesson12/dosya.abc";
+        String dosyaYolu = "src/main/java/com/rd/Lesson12/dosya.txt";
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(dosyaYolu));
         String satir;

@@ -7,8 +7,9 @@ public class BolmeTest {
 
         try{
             int sonuc = a / b;
-        } catch (BolmeException ex){
-            throw new BolmeException("0'a bölme yapılamaz");
+        } catch (ArithmeticException ex) {
+            throw new ArithmeticException(ex.getMessage());
         }
     }
+
 }

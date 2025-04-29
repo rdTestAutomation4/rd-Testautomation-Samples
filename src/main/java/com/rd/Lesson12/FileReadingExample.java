@@ -28,6 +28,7 @@ public class FileReadingExample {
             System.out.println("Dosya bulunamadı: " + ex.getMessage() + "Hata kodu: "+ hataKodu);
         }
         finally {
+
             System.out.println("Dosya okuma işlemi tamamlandı.");
         }
     }

@@ -15,13 +15,13 @@ public class Just {
         sc.close();
         byte[] buf = data.getBytes();
         //Writing it to a file using the DataOutputStream
-        DataOutputStream dos = new DataOutputStream(new FileOutputStream("src/main/java/com/rd/Errors/data.txt"));
+        DataOutputStream dos = new DataOutputStream(new FileOutputStream("src/main/java/com/rd/Lesson12/Errors/data.txt"));
         for (byte b:buf) {
             dos.writeChar(b);
         }
         dos.flush();
         //Reading from the above created file using readChar() method
-        DataInputStream dis = new DataInputStream(new FileInputStream("src/main/java/com/rd/Errors/data.txt"));
+        DataInputStream dis = new DataInputStream(new FileInputStream("src/main/java/com/rd/Lesson12/Errors/data.txt"));
         while(true) {
             char ch;
             try {
