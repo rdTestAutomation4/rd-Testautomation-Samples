@@ -1,8 +1,6 @@
 package com.rd.Lesson10;
 
 public class EnumOrnek {
-
-
     public enum Gunler{
         PAZARTESI,
         SALI,
