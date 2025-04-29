@@ -4,7 +4,7 @@ public class HaftaKontrolu {
 
 
     public static void main(String[] args) {
-        EnumOrnek.Gunler gun = EnumOrnek.Gunler.CUMA;
+        EnumOrnek.Gunler gun = EnumOrnek.Gunler.PAZAR;
 
         switch (gun) {
             case CUMA:
