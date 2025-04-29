@@ -7,5 +7,10 @@ public class SekilTest {
         dikdortgen.alanHesapla();
         dikdortgen.yazdirPozisyon();
 
+
+        Kare kare = new Kare(10,20,30);
+
+        kare.alanHesapla();
+        kare.yazdirPozisyon();
     }
 }

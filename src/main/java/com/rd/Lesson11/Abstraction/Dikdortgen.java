@@ -8,6 +8,7 @@ public class Dikdortgen extends Sekil {
         this.en = en;
         this.boy = boy;
     }
+
     @Override
     void cevreHesapla() {
         System.out.println("Dikdörtgenin çevresi: "+ (2 * (en + boy)));

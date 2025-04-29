@@ -2,7 +2,7 @@ package com.rd.Lesson11.Abstraction;
 
 public class SekilTest {
     public static void main(String[] args) {
-        Dikdortgen dikdortgen = new Dikdortgen(4,5);
+       /* Dikdortgen dikdortgen = new Dikdortgen(4,5);
 
         dikdortgen.cevreHesapla();
         dikdortgen.alanHesapla();
@@ -24,7 +24,16 @@ public class SekilTest {
         KareSukul kareSukul = new KareSukul();
 
         kareSukul.cikti();
-        kareSukul.yazdir("Test");
+        kareSukul.yazdir("Test");*/
+
+        int piSayisi = Daire.PI;
+        System.out.println(piSayisi);
+
+        Daire daire = new Daire(5);
+
+        daire.alanHesapla();
+        daire.cevreHesapla();
+        daire.yazdir("Daire");
 
     }
 }

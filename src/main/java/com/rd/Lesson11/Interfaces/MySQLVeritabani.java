@@ -11,11 +11,12 @@ public class MySQLVeritabani implements Veritabani {
 
     @Override
     public void sorguYap() {
+        System.out.println(" mySql üzerinde sorgu çalıştırıldı");
 
     }
 
     @Override
     public void baglantiKapat() {
-
+        System.out.println("mySql bağlantısı kapatıldı");
     }
 }

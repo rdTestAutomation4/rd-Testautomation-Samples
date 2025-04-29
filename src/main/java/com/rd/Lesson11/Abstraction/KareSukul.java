@@ -4,6 +4,6 @@ public class KareSukul extends Sukul{
 
     @Override
     String cikti() {
-        return "Kara";
+        return "Kare";
     }
 }

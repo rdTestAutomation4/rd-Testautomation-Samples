@@ -11,11 +11,11 @@ public class PostgreSQLVeritabani implements Veritabani {
 
     @Override
     public void sorguYap() {
-
+        System.out.println(" PostgreSQL üzerinde sorgu çalıştırıldı");
     }
 
     @Override
     public void baglantiKapat() {
-
+        System.out.println("PostgreSQL bağlantısı kapatıldı");
     }
 }
