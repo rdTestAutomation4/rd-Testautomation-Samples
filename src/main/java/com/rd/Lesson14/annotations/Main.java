@@ -14,10 +14,16 @@ public class Main {
         for(Annotation bilgi: ekBilgiler) {
             System.out.println(bilgi);
         }
-
+ /*
         BaseClass baseClass = new BaseClass();
 
-        baseClass.cikar(2,5);
+        System.out.println(baseClass.cikar(2,5));
+
+        System.out.println(baseClass.topla(2,3));
+
+        Annotations annotations = new Annotations();
+
+        System.out.println(annotations.topla(2,3));
 
         baseClass.getList();
 /*
