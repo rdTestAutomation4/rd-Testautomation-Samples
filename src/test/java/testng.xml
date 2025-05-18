@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="classes" verbose="true" thread-count="10" time-out="1000">
+    <suite-files>
+        <suite-file path="./test1.xml" />
+        <suite-file path="./test2.xml"/>
+    </suite-files>
+    <test name="Unit Tests">
+        <classes>
+            <class name="com.rd.Lesson18.CustomerTestNG"/>
+        </classes>
+    </test>
+    <test name="Integration Tests">
+        <classes>
+            <class name="com.rd.Lesson18.CustomerTestsWithDataProvider"/>
+            <class name="com.rd.Lesson18.SimpleTestFactory"/>
+        </classes>
+
+
+    </test>
+
+
+</suite>
