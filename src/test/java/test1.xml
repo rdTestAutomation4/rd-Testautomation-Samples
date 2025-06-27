@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="classes" verbose="true" thread-count="10" time-out="1000">
+    <test name="Tests One">
+        <classes>
+            <class name="com.rd.Lesson18.CustomerTestNG"/>
+        </classes>
+    </test>
+</suite>
