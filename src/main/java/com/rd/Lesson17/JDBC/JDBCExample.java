@@ -6,8 +6,8 @@ public class JDBCExample {
 
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/postgres";
-        String kullaniciAdi = "postgres";
-        String sifre = "password";
+        String kullaniciAdi = "root";
+        String sifre = "123456";
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -17,9 +17,10 @@ public class JDBCExample {
             // Veritabanına bağlantı oluşturulması
             connection = DriverManager.getConnection(url, kullaniciAdi, sifre);
             // Sorgu hazırlama
-            String sqlSorgusu = "SELECT * FROM test_user WHERE id = ?";
+            String sqlSorgusu = "SELECT * FROM users";
             preparedStatement = connection.prepareStatement(sqlSorgusu);
-            preparedStatement.setInt(1, 1); // Sorgu için parametre ataması
+            preparedStatement.setInt(1, 1);
+            preparedStatement.setString(2,"serkan");// Sorgu için parametre ataması
 
             // Sorgunun çalıştırılması ve sonucun alınması
             resultSet = preparedStatement.executeQuery();
@@ -29,8 +30,9 @@ public class JDBCExample {
                 // Her bir sonuç satırının işlenmesi
                 int id = resultSet.getInt("id");
                 String ad = resultSet.getString("username");
+                String password = resultSet.getString("password");
                 // ... Diğer sütunların alınması
-                System.out.println("ID: " + id + ", Ad: " + ad);
+                System.out.println("ID: " + id + ", Ad: " + ad + ", Password: "+ password);
             }
         } catch (SQLException e) {
             e.printStackTrace();

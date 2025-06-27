@@ -7,8 +7,8 @@ public class JDBCStatementExample {
 
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/postgres";
-        String kullaniciAdi = "postgres";
-        String sifre = "password";
+        String kullaniciAdi = "root";
+        String sifre = "123456";
 
         Connection connection = null;
         Statement statement = null;
@@ -17,9 +17,9 @@ public class JDBCStatementExample {
         try {
             connection = DriverManager.getConnection(url, kullaniciAdi, sifre);
             statement = connection.createStatement();
-            String degisken = "1";
+            String degisken = " 'OR '1' = '1'";
 
-            String sqlSorgusu = "SELECT * FROM test_user WHERE id = '' OR '1'='1'";
+            String sqlSorgusu = "SELECT * FROM users WHERE id = 'OR '1' = '1'";
 
             resultSet = statement.executeQuery(sqlSorgusu);
 

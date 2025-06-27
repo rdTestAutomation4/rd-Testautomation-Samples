@@ -18,9 +18,9 @@ public class Customer {
         this.firstname = firstname;
     }
 
-    public Customer(String firstname, String email){
+    public Customer(String firstname, String lastname){
         this.firstname = firstname;
-        this.email = email;
+        this.lastname = lastname;
     }
 
     public Integer toplama(int a, int b){

@@ -36,7 +36,7 @@ public class CustomerTestNG {
     public void testCustomerEmail() {
         Customer customer3 = new Customer("John Doe", "johndoe@example.com");
 
-        assertEquals(customer3.getEmail(), "johndoe@example.com");
+        assertEquals(customer3.getEmail(), "johndoeee@example.com");
         assertEquals(customer1.getLastname(), "y");
         assertEquals(customer.getFirstname(), "Ahmet");
     }

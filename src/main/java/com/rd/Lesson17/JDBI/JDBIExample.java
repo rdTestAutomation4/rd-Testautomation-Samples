@@ -5,6 +5,8 @@ import org.jdbi.v3.core.Handle;
 import org.jdbi.v3.core.Jdbi;
 import org.jdbi.v3.core.statement.StatementException;
 
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 public class JDBIExample {
@@ -12,9 +14,9 @@ public class JDBIExample {
     public static void main(String[] args) {
         // PostgreSQL bağlantı bilgileri
         String url = "jdbc:postgresql://localhost:5432/postgres";
-        String kullaniciAdi = "postgres";
-        String sifre = "password";
-        String name = "John Doe";
+        String kullaniciAdi = "root";
+        String sifre = "123456";
+        String name = "cura";
 
         // JDBI nesnesinin oluşturulması ve bağlantının alınması
         Jdbi jdbi = Jdbi.create(url, kullaniciAdi, sifre);
@@ -24,13 +26,12 @@ public class JDBIExample {
             handle.execute("INSERT INTO users (name) VALUES (?)", name);
 
             // Sorgu sonucunun alınması
-            String result = handle.createQuery("SELECT * FROM users WHERE id = :id and name = :username")
-                    .bind("id", 1)
-                    .bind("username","serkan")
-                    .mapTo(String.class)
-                    .one();
+            List<Map<String, Object>> results = handle.createQuery("SELECT * FROM users")
+                    .mapToMap()
+                    .list();
 
-            System.out.println("Result: " + result);
+            results.forEach(System.out::println);
+
 
             Optional<Long> update = handle.createUpdate("UPDATE users SET name=:name WHERE id = :id")
                             .bind("id",0)
